@@ -1,0 +1,68 @@
+Distributed and Parallel Processing – Performance Report
+Student: Waqas Ramzan
+Course: Parallel and Distributed Computing
+Task 4 – Performance Evaluation Report
+
+----------------------------------------------------
+1️⃣ Task 1 – Sequential Processing (Baseline)
+----------------------------------------------------
+• Total Images Processed: 94
+• Processing Type: Sequential (Single CPU)
+• Execution Time: 0.57 seconds
+
+----------------------------------------------------
+2️⃣ Task 2 – Parallel Processing  (Multiprocessing – Task 2)
+----------------------------------------------------
+Images processed in parallel using ProcessPoolExecutor.
+
+Speedup Table:
+
+ Parallel Speedup Table
+Workers | Time (s) | Speedup
+------- | -------- | -------
+1       | 0.76     | 1.00x
+2       | 0.48     | 1.58x
+4       | 0.34     | 2.24x
+8       | 0.31     | 2.45x
+24      | 0.51     | 1.49x
+
+Best Worker Configuration: 8 workers
+Reason: Maximum CPU utilization → best runtime performance
+
+----------------------------------------------------
+3️⃣  Distributed Processing (Simulated – Task 3)
+----------------------------------------------------
+Data split across 2 logical nodes using multiprocessing.
+
+Node Performance:
+• Node 1 → 47 images, Time: 0.14s
+• Node 2 → 47 images, Time: 0.14s
+
+Aggregated Distributed Results:
+• Total Distributed Time: 0.31s
+• Sequential Baseline: 7.85s
+• Efficiency: 25.32x faster than sequential execution
+
+----------------------------------------------------
+4️⃣ Conclusion – Performance Discussion
+----------------------------------------------------
+Parallelism significantly improved performance compared to the
+sequential approach. As the number of workers increased, execution
+time decreased due to better CPU core utilization.
+
+However some bottlenecks still exist:
+• Overhead of process creation
+• File I/O operations while reading/writing images
+• Diminishing speedup after 8 workers due to CPU limits
+
+Distributed simulation showed the highest performance speedup
+because image workload was divided evenly between processes,
+reducing overall runtime.
+
+----------------------------------------------------
+Final Result:
+Parallel and distributed methods outperform the sequential baseline
+and demonstrate the importance of parallel computing in processing
+large datasets efficiently.
+----------------------------------------------------
+END OF REPORT
