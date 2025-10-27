@@ -1,6 +1,3 @@
-Absolutely! Here’s a **ready-to-copy README.md** you can paste directly:
-
-```markdown
 # 🚀 PDC Mid Lab Exam – Parallel & Distributed Image Processing
 
 **Student:** Waqas Ramzan  
@@ -61,15 +58,6 @@ Distributed processing showed the highest performance improvement because the wo
 
 ## 🗂 Included Files
 
-```
-
-sequential_process.py
-parallel_process.py
-distributed_sim.py
-report.txt / report.pdf
-README.md
-
-````
 
 ---
 
@@ -79,18 +67,7 @@ README.md
 python sequential_process.py
 python parallel_process.py
 python distributed_sim.py
-````
 
----
 
-## 🎯 Conclusion
 
-Parallel & distributed methods **outperform** sequential dramatically — proving the **importance of parallel computing** in high-performance systems.
 
-```
-
----
-
-If you want, I can also **add a table comparing sequential, parallel, and distributed times in one visual** at the top for extra marks.  
-Do you want me to do that?
-```
